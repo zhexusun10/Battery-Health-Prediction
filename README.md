@@ -1,1 +1,9 @@
-# Battery-health-prediction
+# Battery-HealthState-Pediction
+多健康特征提取：
+提取了时间特征、能量特征、增量容量 (IC) 特征，共计10个健康特征，以更准确地描述电池的衰退过程。
+采用灰色关联分析 (GRA) 评估特征与SOH的相关性，确保特征的有效性。
+改进的 LSTM 估计模型：
+采用 改进量子粒子群优化 (IQPSO) 算法 来优化 LSTM 的超参数（隐藏层神经元数、学习率、迭代次数、dropout 等），提高模型的全局搜索能力和收敛速度。
+实验验证：
+使用 NASA 电池数据集，在不同放电条件和温度下验证模型性能。
+SOH 估计的均方根误差 (RMSE) 低于 1%，比标准 LSTM、PSO-LSTM 和 QPSO-LSTM 方法更准确、鲁棒性更强。
